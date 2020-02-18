@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--
+    <script> 
+        //Task 1
+        let zero = prompt ('Введите число:', 'например 2');
+        if (zero > 0) {
+            alert ('Значение больше нуля')
+        } else if (zero < 0) {
+            alert ('Значение меньше нуля')
+        } else {
+            alert ('Значение равно нулю')
+        }
+    </script>
+
+    <script>
+        // Task 2
+        let login = prompt ('Введите логин:', '');
+        if (login == 'Админ') {
+            let password = prompt ('Введите пароль:', '');
+            if (password == '123321') {
+                alert ('Добро пожаловать!')
+            } else {
+                alert ('Пароль неверен')
+            }
+        } else {
+            alert ('Вход отменен')
+        }
+    
+    </script>
+
+    <script>
+        //Task 3
+        let age = prompt ('Введите возраст:', '');
+        if (age >= 14 && age <= 90) {
+            alert ('Проверка пройдена')
+        } else {
+            alert ('Проверка не пройдена')
+        }
+    </script>
+
+    <script>
+        //Task 4
+        let number;
+        for (let counter = 2; counter < 10;) {
+            document.write (counter, '</br>');
+            counter += 2;
+        }
+    </script>
+-->
+    <script>
+        //Task 5
+        let number = 0;
+        console.log(number <= 100);
+        console.log(isNaN(number));
+        while ( number <= 100 || isNaN(number)) {
+            number = prompt ('Введите число больше 100:', '');
+            alert (typeof number);
+        }
+        /*
+        let number = 0;
+        number = prompt ('Введите число больше 100:', '');
+        
+        alert(number);
+        */
+    </script>
+
+
+
+<!--
+    <script>
+        //Task 6
+        let a = 2, b = 1;
+        (a + b < 4) ? result = 'Мало' 
+        : result = 'Много';
+    </script>
+
+    <script>
+    //Task 7
+        let i = 0;
+        while (i < 3) {
+            alert( "номер " + i + "!" );
+            i++;
+        }
+    </script>
+
+    <script>
+    //Task 8
+    let n = 1000;
+    let num = 0;
+    while (n > 50) {
+        n /= 2;
+        num++;
+    }
+    alert(n);
+    alert(num);
+    </script>
+
+    <script>
+    //Task 9
+    let hour = prompt ('Введите значение часа', '');
+    (hour >= 0 && hour <= 2 ) ? alert('Первая четверть') :
+    (hour >= 3 && hour <= 5 ) ? alert('Вторая четверть') :
+    (hour >= 6 && hour <= 8 ) ? alert('Третья четверть') :
+    alert('Четвертая четверть') ;
+    </script>
+
+
+    <script>
+    //Task 2.1
+    let a = prompt ('Введите "а":', '');
+    if (a > 0 && a < 5) {
+        alert ('Верно');
+    } else {
+        alert ('Неверно');
+    }
+    </script>
+
+    <script>
+    //Task 2.2
+    let a = prompt ('Введите "а":', '');
+    if (a == 0 || a == 2) {
+        alert (+a+7);
+    } else {
+        alert (+a/10);
+    }
+    </script>
+    
+    <script>
+    //Task 2.3
+    let a = prompt ('Введите "а":', '');
+    let b = prompt ('Введите "b":', '');
+    if (a <= 1 && b >= 3) {
+        alert (+a+(+b));
+    } else {
+        alert (+a-b);
+    }
+    </script>
+    
+    <script>
+    //Task 2.4
+    let a = prompt ('Введите "а":', '');
+    let b = prompt ('Введите "b":', '');
+    if (a > 2 && a < 11 || b >= 6 && b < 14) {
+        alert ('Верно');
+    } else {
+        alert ('Неверно');
+    }
+    </script>
+    
+    <script>
+    //Task 2.5
+    let day = prompt ('Введите день', '');
+    (day >= 1 && day <= 10 ) ? alert('Первая декада') :
+    (day >= 11 && day <= 20 ) ? alert('Вторая декада') :
+    alert('Третья декада');
+    </script>
+    
+    <script>
+    //Task 2.6
+    let month = prompt ('Введите месяц', 'число 1 до 12');
+    (month >= 3 && month <= 5 ) ? alert('Весна') :
+    (month >= 6 && month <= 8 ) ? alert('Лето') :
+    (month >= 9 && month <= 11 ) ? alert('Осень') :
+    alert('Зима');
+    </script>   
+
+    <script>
+    //Task 2.7
+    let str = prompt ('Введите строку', '');
+    if (str[0] === 'a' ) {
+        alert('Да')
+    } else {
+        alert('Нет')
+    }
+    </script> 
+    
+    <script>
+    //Task 2.8
+    let str = prompt ('Введите строку', '');
+    if (str[0] === '1' || str[0] === '2' || str[0] === '3') {
+        alert('Да')
+    } else {
+        alert('Нет')
+    }
+    </script>
+
+    <script>
+    //Task 2.9
+    let str = prompt ('Введите строку', '');
+    let sum;
+    sum = str[0]/1 + str[1]/1 + str[2]/1;
+    alert(sum);
+    </script>
+
+    <script>
+    //Task 2.9
+    let str = prompt ('Введите строку', '');
+    let sum1, sum2;
+    sum1 = str[0]/1 + str[1]/1 + str[2]/1;
+    sum2 = str[3]/1 + str[4]/1 + str[5]/1;
+    if (sum1 === sum2) {
+        alert('Да')
+    } else {
+        alert('Нет')
+    }
+    alert(sum);
+    </script>
+-->
+</body>
+</html>

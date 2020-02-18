@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <script>
+        // Task 7
+        let mass = [1, 2, 3, 4, 5, 6].map(function(number){
+            if (number % 2 == 0 ) {
+                return console.log(number * 2)
+            }
+        });
+    </script>
+
+        
+    <script>
+        // Task 8
+        let number = + prompt('Введите число', '');
+        let mass1 = [];
+        let counter = 1;
+        while(counter != 100) {
+            mass1.push(number * counter);
+            counter++;
+        }
+        console.log("Таблица умножения число " + number + " от 1 до 99: " + mass1 )
+    </script>
+
+    <script>
+        // Task 9
+        let start = +prompt('Введите начало диапазона:');
+        let end = +prompt('Введите конец диапазона:');
+        let mass3 = [];
+        function range (start, end){
+            while (start <= end) {
+                mass3.push(start);
+                start++;
+            }
+        }
+        range(start, end);
+        console.log(mass3);
+    </script>
+
+    <script>
+        // Task 10
+        
+        let max = 0;
+        let min = 0;
+        let mass4 = [-2, 0, 5, -1, 4, 3, 4].map(function(number) {
+                if (number > max) {
+                    max = number;
+                } else if (number < min) {
+                    min = number;
+                }
+        });
+        console.log(max);
+        console.log(min);
+    </script>
+
+    <script>
+        // Task 11
+        let mass5 = [2, 5, 9, 15, 0, 4];
+        for (let i = 0; i < mass5.length; i++) {
+            if (mass5[i] > 3 && mass5[i] < 10) {
+                console.log(mass5[i]);
+            }
+        }
+    </script>
+-->
+    <script>
+    
+        let arr = [
+            [1, 5, 20],
+            [4, 7, 23],
+            [6, 2, 76]
+        ]
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[i][j] > 10) {
+                console.log(arr[i][j]);
+                }
+            }     
+        }
+    </script>
+</body>
+</html>

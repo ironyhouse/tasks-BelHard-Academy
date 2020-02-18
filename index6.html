@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User {
+            constructor (name, age, surName) {
+                this.name = name;
+                this.age = age; 
+                this.surName = surName;
+            }
+
+            getName() {
+                return this.name;
+            }
+            getAge() {
+                return this.age;
+            }
+            getFullName() {
+                return this.surName;
+            }
+        }
+        let user1 = new User ('Artsiom', 23, 'Mazhylouski');
+        console.log(user1.getName());
+        console.log(user1.getAge());
+        console.log(user1.getFullName());
+    </script>
+</body>
+</html>
